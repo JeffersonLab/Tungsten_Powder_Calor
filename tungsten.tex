@@ -1,0 +1,45 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEX main file
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[3p,times,twocolumn]{elsarticle}
+\usepackage{lineno, hyperref, multicol, color, xspace, pdfwidgets, enumerate, amssymb, gensymb, verbatim, lipsum, subcaption, physics}
+
+\begin{comment}
+\makeatletter
+\def\ps@pprintTitle{%
+ \let\@oddhead\@empty
+ \let\@evenhead\@empty
+ \def\@oddfoot{}%
+ \let\@evenfoot\@oddfoot}
+\makeatother
+\end{comment}
+
+\modulolinenumbers[5]
+\linenumbers
+
+\journal{Nuclear Instruments and Methods A}
+
+\begin{document}
+
+\begin{frontmatter}
+\input{titleAndAuthors}
+\input{abstract}
+\end{frontmatter}
+
+\date{\today}
+
+\input{physical}
+\input{datsAndSims}
+\input{future}
+\input{conclusionsAndAcknowledgement}
+\input{references}
+
+\end{document}
+
+
+
+
+
+
+
+
